@@ -59,26 +59,34 @@ Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
 ```
 mkdir %userprofile%\Desktop\Backup
 ```
+![image](https://github.com/user-attachments/assets/a3bcd7ac-92a4-4460-8bb5-a1c6056f12ae)
+
+```
+copy MyFile.txt %userprofile%\Desktop\Backup
+```
+![image](https://github.com/user-attachments/assets/a22fe980-9347-45a5-ae49-8a7e03ad3bdf)
+
 Move the "MyLab" directory to the "Documents" folder.
 
 
 ## COMMAND AND OUTPUT
-
+```
+mkdir %userprofile%\Desktop\Documents
+```
+![image](https://github.com/user-attachments/assets/574064dd-b5e4-42a1-9d4f-9af31a493249)
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
 
-
-
-
-
-
-
+```
+@echo off
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+echo Backup completed successfully!
+```
 ## OUTPUT
 
-
-
-
+![image](https://github.com/user-attachments/assets/ead0b758-a440-4e57-b85e-0884c4f28c10)
 
 # RESULT:
 The commands/batch files are executed successfully.
